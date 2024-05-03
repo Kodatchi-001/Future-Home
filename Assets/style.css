@@ -14,6 +14,7 @@
     background-image: url(/Assets/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*backround-home*/
@@ -23,7 +24,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.132);
+    background-color: rgba(0, 0, 0, 0.18);
 }
 
 /*header*/
@@ -41,12 +42,12 @@ header h1{
     width: 33%;
     text-align: center;
     font-size: 2vw;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #left{
     text-align: start;
-    font-weight: 400;
+    font-weight: 500;
 }
 .contact{
     width: 33%;
@@ -90,23 +91,84 @@ header h1{
     color: white;
 }
 
-.tittle h1{
-    font-size: 5vw;
-    width: 85%;
+.content-tittle-1{
+    width: 80%;
+    height: 33%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
 }
 
-.tittle i{
+.content-tittle-1 h1{
+    font-size: 5vw;
+    width: 100%;
+}
+
+.content-tittle-1 i{
+    width: 5%;
+    height: 80%;
+    display: flex;
+    align-items: end;
     font-size: 1.5vw;
-    color:  rgb(255, 55, 0);
+    color: rgb(255, 55, 0);
+    animation: 11s point ease;
+}
+
+@keyframes point {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*tittle-1*/
+#tittle-home{
+    width: 70%;
+    display: flex;
+    margin-right: auto;
+}
+
+#tittle-home span{
+    width: 20%;
+}
+/*tittle-2*/
+#tittle-home-2{
+    width: 100%;
+    display: flex;
+}
+
+#tittle-home-2 span{
+    width: 20%;
 }
 
 .tittle p{
     width: 75%;
     font-size: 1.3vw;
     font-weight: 400;
+    animation: move 2s ease;
 }
+
+/*tittle-1/\tittle-2/\paragraphe*/
+@keyframes move {
+    from {
+        margin-top: -30vh;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
 
 .button{
     width: 40%;
     height: 40%;
+}
+
+.page-1{
+    width: 100%;
+    height: 100vh;
 }
