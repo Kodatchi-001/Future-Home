@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    text-transform: capitalize;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+
 /*home*/
-#Home{
+#Home {
     width: 100%;
     height: 100vh;
     background-image: url(/Assets/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.331);
 }
 
 /*backround-home*/
-.bg-home{
+.bg-home {
     width: 100%;
     height: 100%;
     display: flex;
@@ -28,7 +31,7 @@
 }
 
 /*header*/
-header{
+header {
     width: 90%;
     height: 15vh;
     display: flex;
@@ -38,24 +41,26 @@ header{
     color: white;
     font-weight: 900;
 }
-header h1{
+
+header h1 {
     width: 33%;
     text-align: center;
     font-size: 2vw;
     font-weight: 700;
 }
 
-#left{
+#left {
     text-align: start;
     font-weight: 500;
 }
-.contact{
+
+.contact {
     width: 33%;
     display: flex;
     justify-content: end;
 }
 
-.contact h2{
+.contact h2 {
     width: 11vw;
     height: 6vh;
     display: flex;
@@ -68,7 +73,7 @@ header h1{
 }
 
 /*Home-Content*/
-.home-content{
+.home-content {
     width: 90%;
     height: 85%;
     display: flex;
@@ -76,13 +81,13 @@ header h1{
     align-items: end;
 }
 
-.tittle{
+.tittle {
     width: 60%;
     height: 40%;
     margin-bottom: 2vh;
 }
 
-.content-tittle{
+.content-tittle {
     width: 100%;
     height: 90%;
     display: flex;
@@ -91,7 +96,7 @@ header h1{
     color: white;
 }
 
-.content-tittle-1{
+.content-tittle-1 {
     width: 80%;
     height: 33%;
     display: flex;
@@ -100,12 +105,12 @@ header h1{
     overflow: hidden;
 }
 
-.content-tittle-1 h1{
+.content-tittle-1 h1 {
     font-size: 5vw;
     width: 100%;
 }
 
-.content-tittle-1 i{
+.content-tittle-1 i {
     width: 5%;
     height: 80%;
     display: flex;
@@ -116,34 +121,37 @@ header h1{
 }
 
 @keyframes point {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
+
 /*tittle-1*/
-#tittle-home{
+#tittle-home {
     width: 70%;
     display: flex;
     margin-right: auto;
 }
 
-#tittle-home span{
+#tittle-home span {
     width: 20%;
 }
+
 /*tittle-2*/
-#tittle-home-2{
+#tittle-home-2 {
     width: 100%;
     display: flex;
 }
 
-#tittle-home-2 span{
+#tittle-home-2 span {
     width: 20%;
 }
 
-.tittle p{
+.tittle p {
     width: 75%;
     font-size: 1.3vw;
     font-weight: 400;
@@ -156,6 +164,7 @@ header h1{
         margin-top: -30vh;
         opacity: 0;
     }
+
     to {
         margin-top: 0;
         opacity: 1;
@@ -163,12 +172,70 @@ header h1{
 }
 
 
-.button{
+.button {
     width: 40%;
     height: 40%;
 }
 
-.page-1{
+/*page-1*/
+.page-1 {
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-page-1 {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-page-1 h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(255, 55, 0);
+}
+
+.content-page-1 p{
+    width: 92%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.content-page-1-info{
+    width: 17vw;
+    height: 8.5vh;
+    display: flex;
+}
+
+.info-content-1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info-content-1 img{
+    width: 55%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.info-content-2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-content-2 h3{
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 1.1vw;
 }
