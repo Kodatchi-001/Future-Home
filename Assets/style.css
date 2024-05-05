@@ -208,11 +208,12 @@ header h1 {
     font-weight: 500;
 }
 
-@keyframes move-page-2{
-    from{
+@keyframes move-page-2 {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -341,7 +342,7 @@ header h1 {
     color: rgba(0, 0, 0, 0.443);
 }
 
-@media (min-width:1024px){
+@media (min-width:1024px) {
     .cards-info-page-2 a:hover {
         color: black;
         font-weight: 600;
@@ -399,6 +400,7 @@ header h1 {
         width: 100%;
         height: 100vh;
         background-position: center;
+        background-attachment: initial;
     }
 
     /*backround-home*/
@@ -502,13 +504,17 @@ header h1 {
         width: 50%;
         display: none;
     }
+
     .info-content-2 {
         width: 50%;
     }
-    .info-content-2 h2,h3 {
+
+    .info-content-2 h2,
+    h3 {
         text-align: center;
         width: 100%;
     }
+
     .info-content-2 h3 {
         color: rgba(0, 0, 0, 0.562);
         font-size: 3.2vw;
@@ -517,7 +523,7 @@ header h1 {
     /*page-2*/
     #page-2 {
         width: 100%;
-        height: 100vh;
+        height: 120vh;
     }
 
     .content-page-2 {
@@ -526,31 +532,31 @@ header h1 {
     }
 
     .content-page-2 h2 {
-        width: 100%;
+        width: 90%;
         height: 10%;
         text-align: center;
+        font-size: 6vw;
     }
 
     .cards-page-2 {
         width: 100%;
         height: 100%;
         display: flex;
+        flex-wrap: wrap-reverse;
     }
 
     .cards-page-2-1 {
         width: 100%;
-        height: 100%;
+        height: 50%;
         display: flex;
         justify-content: center;
-        align-items: end;
-        position: absolute;
+        align-items: center;
     }
 
     .cards-page-2-1-content {
-        width: 90%;
-        height: 65vh;
+        width: 100%;
+        height: 100%;
         margin-right: 0;
-        border-radius: 20px 20px 0px 0px;
     }
 
     .cards-page-2-1-content h1 {
@@ -568,13 +574,13 @@ header h1 {
 
     .cards-info-page-2 {
         width: 100%;
-        height: 12.6%;
+        height: 16.6%;
     }
 
     .cards-info-page-2 a {
         width: 100%;
-        height: 8vh;
-        font-size: 4.5vw;
+        height: 10vh;
+        font-size: 4vw;
     }
 
     .cards-info-page-2 i {
@@ -584,12 +590,12 @@ header h1 {
 
     .cards-info-page-2 p {
         width: 100%;
-        font-size: 3.4vw;
+        font-size: 2.8vw;
     }
 
     .cards-page-2-2 {
         width: 100%;
-        height: 100%;
+        height: 50%;
     }
 
     .cards-page-2-2-bg {
@@ -599,10 +605,8 @@ header h1 {
 
     .cards-page-2-2-bg h1 {
         width: 90%;
-        text-align: center;
+        text-align: end;
         font-size: 8vw;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 }
