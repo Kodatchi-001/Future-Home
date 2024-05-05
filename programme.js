@@ -1,7 +1,6 @@
-// Sélectionnez l'élément titre-home
+// Sélectionnez l'élément
 const tittle = document.getElementById('tittle-home');
-
-function Characters() {
+function Characters_home() {
     // Prendre le contenu de l'élément de titre
     const text = tittle.innerText;
     // Diviser chaque caractère
@@ -11,16 +10,16 @@ function Characters() {
     // Remplacer le contenu de l'élément de titre par les caractères enveloppés
     tittle.innerHTML = wrappedChars.join('');
 }
-Characters();
+Characters_home();
 
 const tittle_2 = document.getElementById('tittle-home-2');
-function Characters_2() {
+function Characters_2_home() {
     const text = tittle_2.innerText;
     const chars = text.split('');
     const wrappedChars = chars.map((char, index) => `<span id="mov-${index}" style="animation:move ${index * 0.4}s;">${char}</span>`);
     tittle_2.innerHTML = wrappedChars.join('');
 }
-Characters_2();
+Characters_2_home();
 
 //cards-page-2
 function cards_content() {
@@ -50,4 +49,34 @@ function cards_content() {
         });
     }
 }
-cards_content()
+cards_content();
+
+//Scroll_Animation
+const header = document.querySelectorAll('header h1');
+const p_page_1 = document.querySelector('.content-page-1 p');
+window.onscroll = function () {
+    if (window.innerWidth <= 1450) {
+        if (scrollY >= 700) {
+            for (i = 0; i < header.length; i++) {
+                // Move-1:
+                header[i].style.color = 'black';
+            }
+        } else if (scrollY <= 690) {
+            for (i = 0; i < header.length; i++) {
+                // Move-1:
+                header[i].style.color = 'white';
+            }
+        }
+    }
+
+    // if (scrollY >= 550) {
+    //     //Move-1:
+    //     p_page_1.style.opacity = '1'
+    //     p_page_1.style.transition = '2s ease'
+    // }
+    // else if (scrollY <= 900) {
+    //     //Move-1:
+    //     p_page_1.style.opacity = '0'
+    // }
+};
+
