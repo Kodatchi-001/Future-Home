@@ -68,15 +68,5 @@ window.onscroll = function () {
             }
         }
     }
-
-    // if (scrollY >= 550) {
-    //     //Move-1:
-    //     p_page_1.style.opacity = '1'
-    //     p_page_1.style.transition = '2s ease'
-    // }
-    // else if (scrollY <= 900) {
-    //     //Move-1:
-    //     p_page_1.style.opacity = '0'
-    // }
 };
 

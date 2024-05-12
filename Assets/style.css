@@ -513,6 +513,7 @@ header h1 {
     h3 {
         text-align: center;
         width: 100%;
+        font-size: 5vw;
     }
 
     .info-content-2 h3 {
@@ -694,7 +695,6 @@ header h1 {
         display: none;
     }
 
-
     /*page-1*/
     #page-1 {
         width: 100%;
@@ -728,7 +728,7 @@ header h1 {
     }
 
     .content-page-1-info {
-        width: 17vw;
+        width: 25vw;
         height: 8.5vh;
         display: flex;
     }
@@ -741,7 +741,7 @@ header h1 {
     }
 
     .info-content-1 img {
-        width: 55%;
+        width: 60%;
         height: 100%;
         border-radius: 50%;
     }
@@ -751,11 +751,12 @@ header h1 {
         height: 100%;
         display: flex;
         flex-wrap: wrap;
+        font-size: 1.5vw;
     }
 
     .info-content-2 h3 {
         color: rgba(0, 0, 0, 0.562);
-        font-size: 1.1vw;
+        font-size: 1.5vw;
     }
 }
 
@@ -841,4 +842,69 @@ header h1 {
     .button {
         display: none;
     }
+    
+    /*page-1*/
+    #page-1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-page-1 {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .content-page-1 h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        color: rgb(255, 55, 0);
+    }
+
+    .content-page-1 p {
+        width: 100%;
+        text-align: center;
+        font-size: 4.5vw;
+        font-weight: 500;
+    }
+
+    .content-page-1-info {
+        width: 25vw;
+        height: 8.5vh;
+        display: flex;
+    }
+
+    .info-content-1 {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-content-1 img {
+        width: 50%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .info-content-2 {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5vw;
+    }
+
+    .info-content-2 h3 {
+        color: rgba(0, 0, 0, 0.562);
+        font-size: 1.5vw;
+    }
+
 }
