@@ -530,6 +530,97 @@ header h1 {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.331);
 }
 
+/*page-4*/
+#page-4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.tittle-page-4 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle-page-4 div {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tittle-page-4 h2 {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 55, 0);
+}
+
+.tittle-page-4 h1 {
+    font-size: 4vw;
+}
+
+.content-page-4 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-page-4-card {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.372);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.372);
+    overflow: hidden;
+    transition: 0.8s ease;
+}
+
+.content-page-4-card:hover {
+    border-bottom: 1px solid black;
+
+    h1 {
+        color: black;
+    }
+
+    i {
+        color: rgb(255, 55, 0);
+        rotate: 180deg;
+    }
+}
+
+.content-page-4 h1 {
+    width: 93%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    font-weight: 500;
+    transition: 0.8s ease;
+}
+
+.content-page-4 i {
+    font-size: 3vw;
+    margin-left: auto;
+    transition: 0.8s ease;
+}
+
+.content-page-4-card p {
+    width: 80%;
+    margin-right: auto;
+    color: black;
+}
+
 /*smartphone*/
 @media only screen and (max-width: 600px) {
 
@@ -805,6 +896,7 @@ header h1 {
     .content-page-3-bg {
         display: none;
     }
+
     .content-page-3-cards {
         width: 100%;
         height: 100%;
@@ -817,6 +909,7 @@ header h1 {
         width: 100%;
         height: 16.6%;
     }
+
     #choix-3 {
         margin-top: 0;
     }
@@ -828,6 +921,60 @@ header h1 {
     .content-page-3-cards-content h2 {
         font-size: 5vw;
     }
+
+    /*page-4*/
+    #page-4 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .tittle-page-4 {
+        width: 100%;
+        height: 30%;
+    }
+
+    .tittle-page-4 div {
+        width: 80%;
+        height: 50%;
+    }
+
+    .tittle-page-4 h2 {
+        width: 100%;
+        font-size: 7vw;
+    }
+
+    .tittle-page-4 h1 {
+        font-size: 5vw;
+    }
+
+    .content-page-4 {
+        width: 100%;
+        height: 70%;
+    }
+
+    .content-page-4-card {
+        width: 90%;
+        height: 20%;
+    }
+
+    .content-page-4 h1 {
+        width: 93%;
+        height: 14vh;
+        font-size: 5vw;
+        color: black;
+    }
+
+    .content-page-4 i {
+        font-size: 6vw;
+        color: rgb(255, 55, 0);
+    }
+
+    .content-page-4-card p {
+        width: 100%;
+        margin-right: auto;
+        font-size: 2.8vw;
+    }
+
 }
 
 /*tablet*/
@@ -976,7 +1123,7 @@ header h1 {
         color: rgba(0, 0, 0, 0.562);
         font-size: 1.5vw;
     }
-    
+
     /*page-3*/
     #page-3 {
         width: 100%;
@@ -1034,6 +1181,7 @@ header h1 {
     .content-page-3-bg {
         display: none;
     }
+
     .content-page-3-cards {
         width: 100%;
         height: 100%;
@@ -1048,6 +1196,7 @@ header h1 {
         width: 80%;
         height: 20%;
     }
+
     #choix-3 {
         margin-top: 0;
     }
@@ -1059,6 +1208,61 @@ header h1 {
     .content-page-3-cards-content h2 {
         font-size: 5vw;
     }
+    
+    /*page-4*/
+    #page-4 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .tittle-page-4 {
+        width: 100%;
+        height: 30%;
+    }
+
+    .tittle-page-4 div {
+        width: 80%;
+        height: 50%;
+    }
+
+    .tittle-page-4 h2 {
+        width: 100%;
+        font-size: 7vw;
+    }
+
+    .tittle-page-4 h1 {
+        font-size: 5vw;
+    }
+
+    .content-page-4 {
+        width: 100%;
+        height: 70%;
+    }
+
+    .content-page-4-card {
+        width: 90%;
+        height: 20%;
+    }
+
+    .content-page-4 h1 {
+        width: 93%;
+        height: 14vh;
+        font-size: 3.5vw;
+        color: black;
+    }
+
+    .content-page-4 i {
+        font-size: 6vw;
+        margin-left: auto;
+        color: rgb(255, 55, 0);
+    }
+
+    .content-page-4-card p {
+        width: 100%;
+        margin-right: auto;
+        font-size: 1.8vw;
+    }
+
 }
 
 /*tablet et pc portable*/
@@ -1207,6 +1411,7 @@ header h1 {
         color: rgba(0, 0, 0, 0.562);
         font-size: 1.5vw;
     }
+
     /*page-3*/
     #page-3 {
         width: 100%;
@@ -1264,6 +1469,7 @@ header h1 {
     .content-page-3-bg {
         display: none;
     }
+
     .content-page-3-cards {
         width: 100%;
         height: 100%;
@@ -1278,6 +1484,7 @@ header h1 {
         width: 48%;
         height: 20%;
     }
+
     #choix-3 {
         margin-top: 0;
     }
@@ -1289,5 +1496,58 @@ header h1 {
     .content-page-3-cards-content h2 {
         font-size: 2.5vw;
     }
+    
+    /*page-4*/
+    #page-4 {
+        width: 100%;
+        height: 100vh;
+    }
 
+    .tittle-page-4 {
+        width: 100%;
+        height: 30%;
+    }
+
+    .tittle-page-4 div {
+        width: 80%;
+        height: 50%;
+    }
+
+    .tittle-page-4 h2 {
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    .tittle-page-4 h1 {
+        font-size: 4vw;
+    }
+
+    .content-page-4 {
+        width: 100%;
+        height: 70%;
+    }
+
+    .content-page-4-card {
+        width: 90%;
+        height: 20%;
+    }
+
+    .content-page-4 h1 {
+        width: 93%;
+        height: 14vh;
+        font-size: 3vw;
+        color: black;
+    }
+
+    .content-page-4 i {
+        font-size: 4vw;
+        margin-left: auto;
+        color: rgb(255, 55, 0);
+    }
+
+    .content-page-4-card p {
+        width: 100%;
+        margin-right: auto;
+        font-size: 1.5vw;
+    }
 }

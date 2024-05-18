@@ -11,7 +11,6 @@ function Characters_home() {
     tittle.innerHTML = wrappedChars.join('');
 }
 Characters_home();
-
 const tittle_2 = document.getElementById('tittle-home-2');
 function Characters_2_home() {
     const text = tittle_2.innerText;
@@ -20,31 +19,42 @@ function Characters_2_home() {
     tittle_2.innerHTML = wrappedChars.join('');
 }
 Characters_2_home();
-
 //cards-page-2
 function cards_content() {
     const all_cards = document.querySelectorAll('.cards-info-page-2 a');
-    for (i = 0; i < all_cards.length; i++) {
+    let previous_card = null;
+    var taille = '25%'
+    for (let i = 0; i < all_cards.length; i++) {
         all_cards[i].addEventListener('click', function () {
-            var show_content = this.parentNode;
+            const show_content = this.parentNode;
             const icon = this.querySelector('.bx-right-arrow-alt');
-            if (show_content.style.height == '25%') {
-                this.style.color = ''
-                this.style.fontWeight = ''
-                this.style.height = ''
-                show_content.style.height = ''
+
+            if (show_content.style.height == taille) {
+                this.style.color = '';
+                this.style.fontWeight = '';
+                this.style.height = '';
+                show_content.style.height = '';
                 show_content.style.alignItems = '';
                 icon.style.transform = '';
-                icon.style.opacity = ''
-            }
-            else {
-                this.style.color = 'black'
-                this.style.fontWeight = '900'
-                this.style.height = '7.5vh'
-                show_content.style.height = '25%'
+                icon.style.opacity = '';
+            } else {
+                if (previous_card) {
+                    previous_card.style.color = '';
+                    previous_card.style.fontWeight = '';
+                    previous_card.style.height = '';
+                    previous_card.parentNode.style.height = '';
+                    previous_card.parentNode.style.alignItems = '';
+                    previous_card.querySelector('.bx-right-arrow-alt').style.transform = '';
+                    previous_card.querySelector('.bx-right-arrow-alt').style.opacity = '';
+                }
+                this.style.color = 'black';
+                this.style.fontWeight = '900';
+                this.style.height = '7.5vh';
+                show_content.style.height = '25%';
                 show_content.style.alignItems = 'start';
                 icon.style.transform = 'rotate(90deg)';
-                icon.style.opacity = '1'
+                icon.style.opacity = '1';
+                previous_card = this;
             }
         });
     }
@@ -69,4 +79,43 @@ window.onscroll = function () {
         }
     }
 };
+//Cards_page_4 
+function cards_content_2() {
+    const all_cards_2 = document.querySelectorAll('.content-page-4-card');
+    let taille_cards = null;
+    const number = "18%";
 
+    all_cards_2.forEach(element => {
+        element.addEventListener('click', function () {
+            const tittle = this.querySelector('h1');
+            const icone = this.querySelector('.bx.bx-chevron-down');
+
+            if (this.style.height === number) {
+                this.style.height = "";
+                tittle.style.height = '';
+                tittle.style.color = '';
+                icone.style.color = '';
+                icone.style.transform = '';
+                taille_cards = null;
+            } else {
+                if (taille_cards) {
+                    const prev_tittle = taille_cards.querySelector('h1');
+                    const prev_icone = taille_cards.querySelector('.bx.bx-chevron-down');
+                    taille_cards.style.height = '';
+                    prev_tittle.style.height = '';
+                    prev_tittle.style.color = '';
+                    prev_icone.style.color = '';
+                    prev_icone.style.transform = '';
+                }
+
+                this.style.height = number;
+                tittle.style.height = '5vh';
+                tittle.style.color = 'black';
+                icone.style.color = 'rgb(255, 55, 0)';
+                icone.style.transform = 'rotate(180deg)';
+                taille_cards = this;
+            }
+        });
+    });
+}
+cards_content_2();
