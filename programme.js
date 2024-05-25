@@ -50,7 +50,7 @@ function cards_content() {
                 this.style.color = 'black';
                 this.style.fontWeight = '900';
                 this.style.height = '7.5vh';
-                show_content.style.height = '25%';
+                show_content.style.height = taille;
                 show_content.style.alignItems = 'start';
                 icon.style.transform = 'rotate(90deg)';
                 icon.style.opacity = '1';
@@ -83,8 +83,13 @@ window.onscroll = function () {
 function cards_content_2() {
     const all_cards_2 = document.querySelectorAll('.content-page-4-card');
     let taille_cards = null;
-    const number = "18%";
-
+    var number;
+    if(window.innerWidth <= 1400){
+        number = '18%'
+    }
+    if(window.innerWidth <= 1024){
+        number = '24%'
+    }
     all_cards_2.forEach(element => {
         element.addEventListener('click', function () {
             const tittle = this.querySelector('h1');
