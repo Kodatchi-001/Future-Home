@@ -1,3 +1,28 @@
+//Navbar_responsiv
+function navbar() {
+    const navabr = document.querySelector('.navbar-responsiv');
+    const all_content_navbar = document.querySelectorAll('.navbar-responsiv-content');
+    
+    const navbarWidth = '40vw';
+    const navbarWidth2 = '180vw';
+    navabr.style.transition = '1s';
+
+    if (navabr.style.marginLeft === navbarWidth) {
+        navabr.style.marginLeft = navbarWidth2;
+        navabr.style.borderRadius = '150px 0px 0px 150px';
+    } 
+    else {
+        navabr.style.marginLeft = navbarWidth;
+        navabr.style.borderRadius = '0px 0px 0px 0px';
+    }
+
+    all_content_navbar.forEach(element => {
+        element.addEventListener('click', function() {
+            navabr.style.marginLeft = navbarWidth2;
+            navabr.style.borderRadius = '150px 0px 0px 150px';
+        });
+    });
+}
 // Sélectionnez l'élément
 const tittle = document.getElementById('tittle-home');
 function Characters_home() {
@@ -84,10 +109,10 @@ function cards_content_2() {
     const all_cards_2 = document.querySelectorAll('.content-page-4-card');
     let taille_cards = null;
     var number;
-    if(window.innerWidth <= 1400){
+    if (window.innerWidth <= 1400) {
         number = '18%'
     }
-    if(window.innerWidth <= 1024){
+    if (window.innerWidth <= 1024) {
         number = '24%'
     }
     all_cards_2.forEach(element => {
