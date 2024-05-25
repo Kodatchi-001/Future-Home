@@ -21,7 +21,7 @@ function Characters_2_home() {
 Characters_2_home();
 //cards-page-2
 function cards_content() {
-    const all_cards = document.querySelectorAll('.cards-info-page-2 a');
+    const all_cards = document.querySelectorAll('.cards-info-page-2 h1');
     let previous_card = null;
     var taille = '25%'
     for (let i = 0; i < all_cards.length; i++) {
