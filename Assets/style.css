@@ -812,13 +812,15 @@ footer {
         align-items: center;
         flex-wrap: wrap;
     }
-    #tittle-navbar{
+
+    #tittle-navbar {
         width: 100%;
         text-align: center;
         font-size: 6vw;
         color: rgb(255, 55, 0);
     }
-    .navbar-responsiv-content a{
+
+    .navbar-responsiv-content a {
         width: 100%;
         text-align: center;
         text-decoration: none;
@@ -1216,13 +1218,15 @@ footer {
         align-items: center;
         flex-wrap: wrap;
     }
-    #tittle-navbar{
+
+    #tittle-navbar {
         width: 100%;
         text-align: center;
         font-size: 6vw;
         color: rgb(255, 55, 0);
     }
-    .navbar-responsiv-content a{
+
+    .navbar-responsiv-content a {
         width: 100%;
         text-align: center;
         text-decoration: none;
@@ -1305,27 +1309,19 @@ footer {
     }
 
     .content-page-1-info {
-        width: 25vw;
+        width: 30vw;
         height: 8.5vh;
-        display: flex;
-    }
-
-    .info-content-1 {
-        width: 40%;
-        height: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .info-content-1 img {
-        width: 60%;
-        height: 100%;
-        border-radius: 50%;
+    .info-content-1 {
+        display: none;
     }
 
     .info-content-2 {
         width: 60%;
-        height: 100%;
+        height: 60%;
         display: flex;
         flex-wrap: wrap;
         font-size: 1.5vw;
@@ -1333,7 +1329,100 @@ footer {
 
     .info-content-2 h3 {
         color: rgba(0, 0, 0, 0.562);
-        font-size: 1.5vw;
+        font-size: 1.8vw;
+    }
+
+    /*page-2*/
+    #page-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-page-2 {
+        width: 95%;
+        height: 90%;
+        flex-wrap: wrap;
+    }
+
+    .content-page-2 h2 {
+        width: 100%;
+        height: 10%;
+        font-size: 6vw;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    .cards-page-2 {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .cards-page-2-1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cards-page-2-1-content {
+        width: 100%;
+        height: 60vh;
+        margin-right: 0;
+        padding-left: 2vw;
+        margin-top: 4vh;
+    }
+
+    .cards-page-2-1-content h1 {
+        width: 100%;
+        height: 16.6%;
+        font-size: 5vw;
+    }
+
+    #tittle-page-2-card {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.139);
+    }
+
+    #sauf {
+        border-bottom: 0;
+    }
+
+    .cards-info-page-2 {
+        width: 100%;
+        height: 14.6%;
+    }
+
+    .cards-info-page-2 h1 {
+        width: 100%;
+        height: 9vh;
+        font-size: 3.5vw;
+        color: black;
+        font-weight: 600;
+    }
+
+    .cards-info-page-2 i {
+        font-size: 5vw;
+        color: black;
+        opacity: 1;
+    }
+
+    .cards-info-page-2 p {
+        font-size: 2.4vw;
+    }
+
+    .cards-page-2-2 {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .cards-page-2-2-bg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cards-page-2-2-bg h1 {
+        width: 70%;
+        text-align: end;
+        font-size: 6vw;
     }
 
     /*page-3*/
@@ -1475,291 +1564,33 @@ footer {
         font-size: 1.8vw;
     }
 
+    /*footer*/
+    footer {
+        display: none;
+    }
 }
 
 /*tablet et pc portable*/
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
 
-    /*home*/
-    #Home {
-        width: 100%;
-        height: 100vh;
-        background-position: center;
-    }
-
-    /*backround-home*/
-    .bg-home {
-        width: 100%;
-        height: 100%;
-    }
-
-    /*header*/
-    header {
-        width: 100%;
-        height: 9vh;
-        justify-content: space-around;
-        backdrop-filter: blur(8px);
-        position: fixed;
-        z-index: 999;
-        flex-direction: row-reverse;
-    }
-
-    header h1 {
-        width: 40%;
-        text-align: start;
-        font-size: 2vw;
-    }
-
-    #left {
-        text-align: end;
-    }
-
-    .contact {
-        display: none;
-    }
-
-    /*Home-Content*/
-    .home-content {
-        width: 90%;
-        height: 95%;
-    }
-
-    .tittle {
-        width: 100%;
-        height: 30%;
-        margin-bottom: 0;
-    }
-
-    .content-tittle {
-        width: 100%;
-        height: 90%;
-    }
-
-    .content-tittle-1 {
-        width: 60%;
-        height: 33%;
-    }
-
-    .content-tittle-1 h1 {
-        font-size: 6vw;
-        width: 100%;
-    }
-
-    .content-tittle-1 i {
-        width: 5%;
-        height: 80%;
-        font-size: 2.8vw;
-    }
-
-    .tittle p {
-        width: 90%;
-        font-size: 2vw;
-    }
-
-    .button {
-        display: none;
-    }
-
     /*page-1*/
-    #page-1 {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content-page-1 {
-        width: 80%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .content-page-1 h1 {
-        width: 100%;
-        text-align: center;
-        font-weight: 500;
-        color: rgb(255, 55, 0);
-    }
-
-    .content-page-1 p {
-        width: 100%;
-        text-align: center;
-        font-size: 4.5vw;
-        font-weight: 500;
-    }
-
     .content-page-1-info {
         width: 25vw;
         height: 8.5vh;
         display: flex;
     }
-
-    .info-content-1 {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
     .info-content-1 img {
         width: 50%;
         height: 100%;
         border-radius: 50%;
     }
-
-    .info-content-2 {
-        width: 60%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.5vw;
-    }
-
-    .info-content-2 h3 {
-        color: rgba(0, 0, 0, 0.562);
-        font-size: 1.5vw;
-    }
-
-    /*page-3*/
-    #page-3 {
-        width: 100%;
-        height: 100%;
-        margin-top: 5vh;
-    }
-
-    .tittle-page-3 {
-        width: 90%;
-        height: 25%;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    .tittle-page-3-1 {
-        width: 100%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        font-size: 3vw;
-    }
-
-    .tittle-page-3-2 {
-        width: 100%;
-        height: 60%;
-        border-bottom: 0;
-        margin-bottom: 2vh;
-    }
-
-    .tittle-page-3-2-content-1 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .tittle-page-3-2-content-1 h1 {
-        font-size: 2vw;
-    }
-
-    .tittle-page-3-2-content-2 {
-        display: none;
-    }
-
-    .tittle-page-3-2-content-3 {
-        display: none;
-    }
-
-    .content-page-3 {
-        width: 100%;
-        height: 60%;
-        position: relative;
-    }
-
-    .content-page-3-bg {
-        display: none;
-    }
-
-    .content-page-3-cards {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        position: initial;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .content-page-3-cards-1 {
-        width: 48%;
-        height: 20%;
-    }
-
-    #choix-3 {
-        margin-top: 0;
-    }
-
-    #choix-4 {
-        margin-top: 0;
-    }
-
-    .content-page-3-cards-content h2 {
-        font-size: 2.5vw;
-    }
-
-    /*page-4*/
-    #page-4 {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .tittle-page-4 {
-        width: 100%;
-        height: 30%;
-    }
-
-    .tittle-page-4 div {
-        width: 80%;
-        height: 50%;
-    }
-
-    .tittle-page-4 h2 {
-        width: 100%;
-        font-size: 6vw;
-    }
-
-    .tittle-page-4 h1 {
-        font-size: 4vw;
-    }
-
-    .content-page-4 {
-        width: 100%;
+    /*footer*/
+    .content-footer-2-icone h1 {
+        width: 70%;
         height: 70%;
     }
-
-    .content-page-4-card {
-        width: 90%;
-        height: 20%;
-    }
-
-    .content-page-4 h1 {
-        width: 93%;
-        height: 14vh;
-        font-size: 3vw;
-        color: black;
-    }
-
-    .content-page-4 i {
-        font-size: 4vw;
-        margin-left: auto;
-        color: rgb(255, 55, 0);
-    }
-
-    .content-page-4-card p {
-        width: 100%;
-        margin-right: auto;
-        font-size: 1.5vw;
+    .content-footer-2-icone-1 i {
+        width: 5vw;
+        height: 8vh;
     }
 }
