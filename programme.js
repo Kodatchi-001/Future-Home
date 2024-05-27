@@ -5,7 +5,7 @@ function navbar() {
     
     const navbarWidth = '40vw';
     const navbarWidth2 = '180vw';
-    navabr.style.transition = '1s';
+    navabr.style.transition = '0.8s';
 
     if (navabr.style.marginLeft === navbarWidth) {
         navabr.style.marginLeft = navbarWidth2;
